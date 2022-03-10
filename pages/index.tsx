@@ -87,7 +87,7 @@ export default function Index() {
         <div className="self-center mt-20 my-3 dark:text-white">
           <Typewriter
             onInit={(typewriter) => {
-              typewriter.typeString("Collaborative").start();
+              typewriter.typeString("Resiliency").start();
             }}
           />
         </div>
@@ -105,13 +105,13 @@ export default function Index() {
             }}
             transition={{
               repeat: Infinity,
-              duration: 8,
+              duration: 14,
               ease: "circIn",
               times: [0, 0.1, 0.15, 0.75, 0.8, 1],
               repeatType: "reverse",
             }}
           >
-            Inter
+            Re
           </motion.div>
           <motion.div
             animate={{
@@ -127,13 +127,13 @@ export default function Index() {
             transition={{
               repeat: Infinity,
               delay: 3,
-              duration: 8,
+              duration: 14,
               ease: "circIn",
               times: [0, 0.1, 0.15, 0.75, 0.8, 1],
               repeatType: "reverse",
             }}
           >
-            oper
+            li
           </motion.div>
           <motion.div
             animate={{
@@ -149,13 +149,79 @@ export default function Index() {
             transition={{
               repeat: Infinity,
               delay: 6,
-              duration: 8,
+              duration: 14,
               ease: "circIn",
               times: [0, 0.1, 0.15, 0.75, 0.8, 1],
               repeatType: "reverse",
             }}
           >
-            able
+            a
+          </motion.div>
+          <motion.div
+            animate={{
+              color: [
+                blackWhite,
+                blackWhite,
+                "rgba(99, 102, 241,1)",
+                "rgba(99, 102, 241,1)",
+                blackWhite,
+                blackWhite,
+              ],
+            }}
+            transition={{
+              repeat: Infinity,
+              delay: 9,
+              duration: 14,
+              ease: "circIn",
+              times: [0, 0.1, 0.15, 0.75, 0.8, 1],
+              repeatType: "reverse",
+            }}
+          >
+            bi
+          </motion.div>
+          <motion.div
+            animate={{
+              color: [
+                blackWhite,
+                blackWhite,
+                "rgba(99, 102, 241,1)",
+                "rgba(99, 102, 241,1)",
+                blackWhite,
+                blackWhite,
+              ],
+            }}
+            transition={{
+              repeat: Infinity,
+              delay: 12,
+              duration: 14,
+              ease: "circIn",
+              times: [0, 0.1, 0.15, 0.75, 0.8, 1],
+              repeatType: "reverse",
+            }}
+          >
+            li
+          </motion.div>
+          <motion.div
+            animate={{
+              color: [
+                blackWhite,
+                blackWhite,
+                "rgba(99, 102, 241,1)",
+                "rgba(99, 102, 241,1)",
+                blackWhite,
+                blackWhite,
+              ],
+            }}
+            transition={{
+              repeat: Infinity,
+              delay: 15,
+              duration: 14,
+              ease: "circIn",
+              times: [0, 0.1, 0.15, 0.75, 0.8, 1],
+              repeatType: "reverse",
+            }}
+          >
+            ty
           </motion.div>
         </div>
         <div className="flex font-bold text-5xl sm:text-7xl my-3 self-center dark:text-white">
@@ -163,7 +229,7 @@ export default function Index() {
             animate={{ x: [null, -10] }}
             transition={{ duration: 1, times: [0, 1] }}
           >
-            De
+            Chaos
           </motion.div>
           <motion.div
             animate={{ x: [0, -10, -10, 10, 10, 0] }}
@@ -175,14 +241,14 @@ export default function Index() {
               repeatType: "reverse",
             }}
           >
-            central
+            Engineering
           </motion.div>
-          <motion.div
+          {/* <motion.div
             animate={{ x: [null, 10] }}
             transition={{ duration: 1, times: [0, 1] }}
           >
             ized
-          </motion.div>
+          </motion.div> */}
         </div>
         <div className="self-center mx-5 text-center my-6 text-lg font-light dark:text-white">
           <div>A new type of electronic book. </div>

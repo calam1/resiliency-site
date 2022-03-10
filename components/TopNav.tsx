@@ -12,13 +12,13 @@ export default function TopNav() {
 
         </div>
       <div className="ml-auto flex justify-center mr-2">
-        <a
+        {/* <a
         href="https://github.com/MatthewCaseres"
         target="_blank"
         rel="noopener noreferrer"
       >
         <SvgGithub className="mr-5 w-7 h-7" />
-      </a>
+      </a> */}
 
         <DarkToggle />
       </div>

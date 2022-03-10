@@ -62,7 +62,10 @@ export default function Node2({
     >   
         {node.route ?
           <Link href={node.route}>
-            <a className={`flex-1 hover:text-indigo-400 hover:underline dark:text-gray-300 text-gray-600 text-lg ${highlighted && "text-indigo-500 dark:text-indigo-500"}`}>
+            {/* <a className={`flex-1 hover:text-indigo-400 hover:underline dark:text-gray-300 text-gray-600 text-lg ${highlighted && "text-indigo-500 dark:text-indigo-500"}`}> */}
+            {/* <a className={`text-xs flex-1 hover:text-red-400 dark:text-gray-300 text-red-600 text-lg ${highlighted && "text-green-500 dark:text-indigo-500"}`}> */}
+            <a className="my-2 block text-xs font-light dark:text-gray-300">
+
               {node.title}
             </a>
           </Link> :

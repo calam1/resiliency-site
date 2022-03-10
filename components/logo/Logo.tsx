@@ -43,11 +43,11 @@ function Logo({ scale, isLink }: { scale: string; isLink: boolean }) {
           overflow: "hidden",
         }}
       >
-        <Padlock width={45} height={45} />
+        {/* <Padlock width={45} height={45} /> */}
       </div>
       <div className="relative">
         <Link href="/">
-          <h3 style={{ margin: 0 }}>Open</h3>
+          <h3 style={{ margin: 0 }}>Company</h3>
         </Link>
         <Link href="/">
           <h3
@@ -58,7 +58,7 @@ function Logo({ scale, isLink }: { scale: string; isLink: boolean }) {
               position: "relative",
             }}
           >
-            EdTech
+            ABC
           </h3>
         </Link>
       </div>
