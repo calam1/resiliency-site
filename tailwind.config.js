@@ -90,7 +90,7 @@ module.exports = {
       typography: ["dark"],
       borderWidth: ["last"]
     },
-    
+    display: ['responsive', 'group-hover', 'group-focus'],
   },
   plugins: [require("@tailwindcss/typography"), require("tailwind-scrollbar")],
 };

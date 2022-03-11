@@ -275,16 +275,16 @@ export default function Index() {
             <Card {...props} />
           ))}
         </div>
-        <div className="font-extralight self-center text-center mt-8">
+        {/* <div className="font-extralight self-center text-center mt-8">
           Like the site? Build your own.
-        </div>
-        <a
+        </div> */}
+        {/* <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/MatthewCaseres/markdownbooks.com"
           className="mt-3 mb-12 self-center bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
           View on GitHub
-        </a>
+        </a> */}
       </div>
     </div>
   );
