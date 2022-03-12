@@ -241,7 +241,7 @@ export default function Index() {
               repeatType: "reverse",
             }}
           >
-            Engineering
+            Test
           </motion.div>
           {/* <motion.div
             animate={{ x: [null, 10] }}

@@ -25,7 +25,8 @@ function Logo({ scale, isLink }: { scale: string; isLink: boolean }) {
   const scaleCss = `scale(${scale},${scale})`;
   return (
     <div
-      className="prose dark:prose-dark font-mono font-bold relative ml-4 mt-3"
+      // className="prose dark:prose-dark font-sans text-green-400 relative ml-4 mt-3"
+      className="font-sans text-gray-700 relative ml-4 mt-3"
       style={{
         msTransform: scaleCss,
         WebkitTransform: scaleCss,
@@ -33,21 +34,23 @@ function Logo({ scale, isLink }: { scale: string; isLink: boolean }) {
         cursor: isLink ? "pointer" : "auto",
       }}
     >
-      <div
-        style={{
-          position: "absolute",
-          left: 41,
-          top: 0,
-          zIndex: 1,
-          maxHeight: 37,
-          overflow: "hidden",
-        }}
-      >
-        <Padlock width={45} height={45} />
-      </div>
+      {/*<div*/}
+      {/*  style={{*/}
+      {/*    position: "absolute",*/}
+      {/*    left: 41,*/}
+      {/*    top: 0,*/}
+      {/*    zIndex: 1,*/}
+      {/*    maxHeight: 37,*/}
+      {/*    overflow: "hidden",*/}
+      {/*  }}*/}
+      {/*>*/}
+      {/*  /!*<Padlock width={45} height={45} />*!/*/}
+      {/*</div>*/}
       <div className="relative">
         <Link href="/">
-          <h3 style={{ margin: 0 }}>Company ABC</h3>
+            <img  src="http://acmelogos.com/images/logo-1.svg" alt="ACME" width="120" />
+
+            {/*<h3  style={{ margin: 0 }}>Company</h3>*/}
         </Link>
         {/* <Link href="/">
           <h3
