@@ -1,25 +1,26 @@
 import DarkToggle from "./DarkToggle";
-import {useState} from "react";
+import { useState } from "react";
 import Link from "next/link"; // import state
+import LogoAcme from "./logo/LogoAcme";
+
 
 export default function TopNav() {
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
     return (
-        // <div className="flex items-center justify-between py-8">
-        <div className={!isNavOpen
-            ? "container flex flex-shrink ken-customizations items-center justify-between py-1"
-            : "container flex flex-shrink items-center justify-between py-1"
-        }>
+        <div className="container flex flex-shrink ken-customizations items-center justify-between py-2 px-2">
 
-
-        {/*<div className="flex items-center justify-between border-b border-gray-400 py-8">*/}
-            <div className="relative px-5">
-                <Link href="/">
-                    <img  src="http://acmelogos.com/images/logo-1.svg" alt="ACME" width="120" />
-                </Link>
-            </div>
+            {/*<div className="ml-2.5 px-5">*/}
+            {/*<LogoAcme isLink={true} scale="0.7" />*/}
+            <LogoAcme/>
+            {/*<div className="relative px-5">*/}
+            {/*    <Link href="/">*/}
+            {/*        /!*<img  src="http://acmelogos.com/images/logo-1.svg" alt="ACME" width="120" />*!/*/}
+            {/*        <img src="" alt="ACME" width="120" />*/}
+            {/*    </Link>*/}
+            {/*</div>*/}
             {/*<a href="/">*/}
             {/*    <img src="https://designbygio.it/images/logo.png" alt="logo"/>*/}
+            {/*    <img  src="http://acmelogos.com/images/logo-1.svg" alt="ACME" width="120" />*/}
             {/*</a>*/}
             <nav>
                 <section className="MOBILE-MENU flex md:hidden lg:hidden">
@@ -32,7 +33,7 @@ export default function TopNav() {
                         <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
                     </div>
 
-                    <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}> // toggle class based on isNavOpen state
+                    <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
                         <div
                             className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
                             onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
@@ -46,8 +47,8 @@ export default function TopNav() {
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                             >
-                                <line x1="18" y1="6" x2="6" y2="18"/>
-                                <line x1="6" y1="6" x2="18" y2="18"/>
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
                             </svg>
                         </div>
                         <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
@@ -88,11 +89,11 @@ export default function TopNav() {
                             <div className="px-4 pt-2 pb-2 bg-white bg-white shadow-lg">
                                 <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
                                     <a href="#"
-                                       className="block md:inline-block text-gray-600 hover:bg-red-50 ">Home</a>
+                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Home</a>
                                 </div>
                                 <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
                                     <a href="#"
-                                       className="block md:inline-block text-gray-600 hover:bg-red-50 ">Away</a>
+                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Away</a>
                                 </div>
                             </div>
                         </div>
@@ -108,11 +109,11 @@ export default function TopNav() {
                             <div className="px-4 pt-2 pb-2 bg-white bg-white shadow-lg">
                                 <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
                                     <a href="#"
-                                       className="block md:inline-block text-gray-600 hover:bg-red-50 ">Home</a>
+                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Home</a>
                                 </div>
                                 <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
                                     <a href="#"
-                                       className="block md:inline-block text-gray-600 hover:bg-red-50 ">Away</a>
+                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Away</a>
                                 </div>
                             </div>
                         </div>
@@ -128,11 +129,11 @@ export default function TopNav() {
                             <div className="px-4 pt-2 pb-2 bg-white bg-white shadow-lg">
                                 <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
                                     <a href="#"
-                                       className="block md:inline-block text-gray-600 hover:bg-red-50 ">Home</a>
+                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Home</a>
                                 </div>
                                 <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
                                     <a href="#"
-                                       className="block md:inline-block text-gray-600 hover:bg-red-50 ">Away</a>
+                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Away</a>
                                 </div>
                             </div>
                         </div>
@@ -148,18 +149,18 @@ export default function TopNav() {
                             <div className="px-4 pt-2 pb-2 bg-white bg-white shadow-lg">
                                 <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
                                     <a href="#"
-                                       className="block md:inline-block text-gray-600 hover:bg-red-50 ">Home</a>
+                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Home</a>
                                 </div>
                                 <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
                                     <a href="#"
-                                       className="block md:inline-block text-gray-600 hover:bg-red-50 ">Away</a>
+                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Away</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="flex px-3">
-                        <DarkToggle/>
+                    <div className="flex px-6">
+                        <DarkToggle />
                     </div>
                 </div>
 
@@ -191,6 +192,9 @@ export default function TopNav() {
       .ken-customizations {
         width: 100% !important;
         max-width: 100% !important;
+      }
+      span {
+        white-space: nowrap;
       }
     `}</style>
         </div>
