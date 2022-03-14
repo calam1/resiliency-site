@@ -1,6 +1,6 @@
 import DarkToggle from "./DarkToggle";
 import { useState } from "react";
-import Link from "next/link"; // import state
+// import Link from "next/link"; // import state
 import LogoAcme from "./logo/LogoAcme";
 
 
@@ -8,20 +8,9 @@ export default function TopNav() {
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
     return (
         <div className="container flex flex-shrink ken-customizations items-center justify-between py-2 px-2">
-
-            {/*<div className="ml-2.5 px-5">*/}
-            {/*<LogoAcme isLink={true} scale="0.7" />*/}
-            <LogoAcme/>
-            {/*<div className="relative px-5">*/}
-            {/*    <Link href="/">*/}
-            {/*        /!*<img  src="http://acmelogos.com/images/logo-1.svg" alt="ACME" width="120" />*!/*/}
-            {/*        <img src="" alt="ACME" width="120" />*/}
-            {/*    </Link>*/}
-            {/*</div>*/}
-            {/*<a href="/">*/}
-            {/*    <img src="https://designbygio.it/images/logo.png" alt="logo"/>*/}
-            {/*    <img  src="http://acmelogos.com/images/logo-1.svg" alt="ACME" width="120" />*/}
-            {/*</a>*/}
+            <div className="px-5    ">
+                <LogoAcme/>
+            </div>
             <nav>
                 <section className="MOBILE-MENU flex md:hidden lg:hidden">
                     <div
@@ -65,97 +54,63 @@ export default function TopNav() {
                     </div>
                 </section>
 
-                {/*<ul className="DESKTOP-MENU hidden space-x-8 lg:flex">*/}
-                {/*    <li>*/}
-                {/*        <a href="/about">About</a>*/}
-                {/*    </li>*/}
-                {/*    <li>*/}
-                {/*        <a href="/portfolio">Portfolio</a>*/}
-                {/*    </li>*/}
-                {/*    <li>*/}
-                {/*        <a href="/contact">Contact</a>*/}
-                {/*    </li>*/}
-                {/*</ul>*/}
-
-
                 <div className="hidden container md:flex md:flex-row md:items-center md:justify-centers w-auto">
-                    <div className="relative group">
+                    <div className="relative group hover:border-gray-600 border-b border-transparent border-0  ">
                         <button
-                            className="flex flex-row items-center w-full py-4  text-sm text-gray-600 text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-sans">
-                            <span>First Dropdown</span>
+                            className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">
+                            First Dropdown
                         </button>
-                        <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
-
-                            <div className="px-4 pt-2 pb-2 bg-white bg-white shadow-lg">
-                                <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
-                                    <a href="#"
-                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Home</a>
-                                </div>
-                                <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
-                                    <a href="#"
-                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Away</a>
-                                </div>
-                            </div>
+                        <div>
+                            <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg group-hover:block">
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Home</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Nowhere some</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Away</a></li>
+                            </ul>
                         </div>
                     </div>
 
-                    <div className="relative group">
+                    <div className="relative group hover:border-gray-600 border-b border-transparent border-0  ">
                         <button
-                            className="flex flex-row items-center w-full py-4  text-sm text-gray-600 text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-sans">
+                            className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">
+                            {/*className="flex flex-row items-center w-full py-4  text-sm text-gray-600 text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-sans">*/}
                             <span>Second Dropdown</span>
                         </button>
-                        <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
-
-                            <div className="px-4 pt-2 pb-2 bg-white bg-white shadow-lg">
-                                <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
-                                    <a href="#"
-                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Home</a>
-                                </div>
-                                <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
-                                    <a href="#"
-                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Away</a>
-                                </div>
-                            </div>
+                        <div>
+                            <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg group-hover:block">
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Home</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Nowhere some</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Away</a></li>
+                            </ul>
                         </div>
                     </div>
 
-                    <div className="relative group">
+                    <div className="relative group hover:border-gray-600 border-b border-transparent border-0 ">
                         <button
-                            className="flex flex-row items-center w-full py-4  text-sm text-gray-600 text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-sans">
+                            className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">
+                            {/*className="flex flex-row items-center w-full py-4  text-sm text-gray-600 text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-sans">*/}
                             <span>Third Dropdown</span>
                         </button>
-                        <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
-
-                            <div className="px-4 pt-2 pb-2 bg-white bg-white shadow-lg">
-                                <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
-                                    <a href="#"
-                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Home</a>
-                                </div>
-                                <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
-                                    <a href="#"
-                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Away</a>
-                                </div>
-                            </div>
+                        <div>
+                            <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg group-hover:block">
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Home</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Nowhere some</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Away</a></li>
+                            </ul>
                         </div>
                     </div>
 
-                    <div className="relative group">
+                    <div className="relative group hover:border-gray-600 border-b border-transparent border-0 ">
                         <button
-                            className="flex flex-row items-center w-full py-4  text-sm text-gray-600 text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-sans">
-                            <span>Fourth Dropdown</span>
+                            className="flex flex-row items-center h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">
+                            {/*className="flex flex-row items-center w-full py-4  text-sm text-gray-600 text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-sans">*/}
+                            <span className="">Fourth Dropdown</span>
                         </button>
-                        <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
-
-                            <div className="px-4 pt-2 pb-2 bg-white bg-white shadow-lg">
-                                <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
-                                    <a href="#"
-                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Home</a>
-                                </div>
-                                <div className="py-1 grid grid-cols-1 gap-4 md:grid-cols-2 text-sm font-light">
-                                    <a href="#"
-                                        className="block md:inline-block text-gray-600 hover:bg-red-50 ">Away</a>
-                                </div>
-                            </div>
+                        <div>
+                            <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg group-hover:block">
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Home</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Nowhere some</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Away</a></li>
+                            </ul>
                         </div>
                     </div>
 
@@ -187,11 +142,11 @@ export default function TopNav() {
       @media (min-width: 767px) { 
       .ken-customizations {
         justify-content: center !important; 
-       }
-       }
-      .ken-customizations {
         width: 100% !important;
         max-width: 100% !important;
+      }
+      .chris-styles {
+        button:hover {border: 2px solid #4CAF50}; 
       }
       span {
         white-space: nowrap;
