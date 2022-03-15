@@ -3,10 +3,7 @@ import Link from "next/link";
 const About = () => (
     <>
         <section>
-            {/*<div class = "image">*/}
-            {/*    <img src="https://cdn.pixabay.com/photo/2017/08/26/23/37/business-2684758__340.png"/>*/}
-            {/*</div>*/}
-
+            <script></script>
             <div class = "content">
                 <h2>About Us</h2>
                 <span></span>
@@ -29,73 +26,20 @@ const About = () => (
                             <a>Failure Mode & Effects Analysis</a>
                         </Link>
                     </li>
-
-
-                    {/*<li><a href = "/resiliency">resiliency</a></li>*/}
-                    {/*<div class = "vertical-line"></div>*/}
-                    {/*<li><a href = "/chaos">chaos engineering</a></li>*/}
-                    {/*<div class = "vertical-line"></div>*/}
-                    {/*<li><a href = "/fmea">fmea</a></li>*/}
                 </ul>
-                {/*<ul class = "icons">*/}
-                {/*    <li>*/}
-                {/*        <i class = "fa fa-twitter"></i>*/}
-                {/*    </li>*/}
-                {/*    <li>*/}
-                {/*        <i class = "fa fa-facebook"></i>*/}
-                {/*    </li>*/}
-                {/*    <li>*/}
-                {/*        <i class = "fa fa-github"></i>*/}
-                {/*    </li>*/}
-                {/*    <li>*/}
-                {/*        <i class = "fa fa-pinterest"></i>*/}
-                {/*    </li>*/}
-                {/*</ul>*/}
             </div>
         </section>
 
         <style>{`
-
-
-            {
-                box-sizing: border-box;
-                padding: 0;
-                margin: 0;
-            }
-            body{
-                // font-family: 'Playfair Display', serif;
-                display: grid;
-                // background-color: #4158D0;
-                // background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-
-                align-content: center;
-                min-height: 100vh;
-            }
             section{
                 display: grid;
-                // grid-template-columns: 1fr 1fr;
-                // min-height: 70vh;
-                // width: 75vw;
-                // margin: 0 auto;
-                // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 border-radius: 12px
             }
-            // .image{
-            //     background-color: #12192c;
-            //     display: flex;
-            //     border-radius: 12px 0 0 12px;
-            // }
-            // .image img{
-            //     height:50vh;
-            //     margin:50px auto
-            // }
             .content{
-                // background-color: #12192c;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
-                // border-radius: 0  12px 12px 0;
                 color: #323232;
             }
             .content h2{
@@ -163,15 +107,11 @@ const About = () => (
                 color: #bcbcbc;
                 cursor: pointer;
             }
-
-
-            /*****************/
-
             @media(max-width: 900px){
                 section{
                 grid-template-columns: 1fr;
                 width: 100%;
-                
+
                 border-radius: none;
             }
                 .image{
@@ -201,20 +141,9 @@ const About = () => (
                 .links li{
                 padding: 6px 10px;
             }
-                .icons li i{
-                font-size: 15px;
-            }
-            }
-            .credit{
-                text-align: center;
-                color: #000;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            }
-
-            .credit a{
-                text-decoration: none;
-                color:#000;
-                font-weight: bold;
+            //     .icons li i{
+            //     font-size: 15px;
+            // }
             }
             `}
         </style>

@@ -70,11 +70,11 @@ export default function Index() {
         <div className="flex flex-col chris-customizations left-justify my-6 text-lg font-light dark:text-white">
           <div>Read our detailed Resiliency Reviews for our cloud Apps.</div>
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 mx-5 max-w-xl">
-          {cardsInfo.map((props) => (
-            <Card {...props} />
-          ))}
-        </div>
+        {/*<div className="grid md:grid-cols-2 grid-cols-1 mx-5 max-w-xl">*/}
+        {/*  {cardsInfo.map((props) => (*/}
+        {/*    <Card {...props} />*/}
+        {/*  ))}*/}
+        {/*</div>*/}
         {/* <div className="font-extralight self-center text-center mt-8">
           Like the site? Build your own.
         </div> */}

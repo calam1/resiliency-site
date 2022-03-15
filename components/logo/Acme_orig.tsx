@@ -9,7 +9,7 @@ export default function SvgAcme(props: React.ComponentProps<'svg'>) {
         >
             <title>acme</title>
             <defs></defs>
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g id="Desktop-HD" transform="translate(-793.000000, -178.000000)">
                     <g id="acme-logo-1" transform="translate(793.000000, 178.000000)">
                         <path d="M4.76073423,33.5416645 L2.96008108,33.5416645 C1.46803153,33.5416645 0.258054054,32.3397452 0.258054054,30.8576323 L0.258054054,12.0166968 C0.258054054,10.5345839 1.46803153,9.33266452 2.96008108,9.33266452 L4.4646982,9.33266452 C5.95674775,9.33266452 7.16672523,10.5345839 7.16672523,12.0166968 L7.16672523,31.1516968 C7.16672523,32.4715194 6.08940541,33.5416645 4.76073423,33.5416645" id="Fill-80" fill="#221F20"></path>
