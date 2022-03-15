@@ -1,6 +1,6 @@
 import DarkToggle from "./DarkToggle";
 import { useState } from "react";
-// import Link from "next/link"; // import state
+import Link from "next/link";
 import LogoAcme from "./logo/LogoAcme";
 
 
@@ -9,7 +9,11 @@ export default function TopNav() {
     return (
         <div className="container flex flex-shrink ken-customizations items-center justify-between py-2 px-2">
             <div className="px-5    ">
-                <LogoAcme/>
+                <Link href="/">
+                    <a>
+                        <LogoAcme/>
+                    </a>
+                </Link>
             </div>
             <nav>
                 <section className="MOBILE-MENU flex md:hidden lg:hidden">
@@ -42,7 +46,9 @@ export default function TopNav() {
                         </div>
                         <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                             <li className="border-b border-gray-400 my-8 uppercase">
-                                <a href="/about">About</a>
+                                <Link href="/about">
+                                    <a>About App</a>
+                                </Link>
                             </li>
                             <li className="border-b border-gray-400 my-8 uppercase">
                                 <a href="/portfolio">Portfolio</a>
@@ -55,18 +61,11 @@ export default function TopNav() {
                 </section>
 
                 <div className="hidden container md:flex md:flex-row md:items-center md:justify-centers w-auto">
-                    <div className="relative group hover:border-gray-600 border-b border-transparent border-0  ">
+                    <div className="relative group">
                         <button
                             className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">
-                            First Dropdown
+                            <a href="/about">About Resiliency </a>
                         </button>
-                        <div>
-                            <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg group-hover:block">
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Home</a></li>
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Nowhere some</a></li>
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Away</a></li>
-                            </ul>
-                        </div>
                     </div>
 
                     <div className="relative group hover:border-gray-600 border-b border-transparent border-0  ">
@@ -145,8 +144,10 @@ export default function TopNav() {
         width: 100% !important;
         max-width: 100% !important;
       }
-      .chris-styles {
-        button:hover {border: 2px solid #4CAF50}; 
+      .chris-customizations {
+        justify-content: center !important; 
+        width: 800px !important;
+        max-width: 1000px !important;
       }
       span {
         white-space: nowrap;
