@@ -1,7 +1,7 @@
 const Fmea = () => (
     <>
         <section>
-            <div class = "content">
+            <div className = "content py-20">
                 <h2>FMEA</h2>
                 <span></span>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis aspernatur voluptas inventore ab voluptates nostrum minus illo laborum harum laudantium earum ut, temporibus fugiat sequi explicabo facilis unde quos corporis!</p>

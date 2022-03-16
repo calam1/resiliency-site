@@ -2,7 +2,7 @@ const Chaos = () => (
     <>
         <section>
             <div className = "content py-20">
-                <h2>Chaos</h2>
+                <h2>Review Process</h2>
                 <span></span>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis aspernatur voluptas inventore ab voluptates nostrum minus illo laborum harum laudantium earum ut, temporibus fugiat sequi explicabo facilis unde quos corporis!</p>
             </div>
@@ -13,11 +13,6 @@ const Chaos = () => (
                 box-sizing: border-box;
                 padding: 0;
                 margin: 0;
-            }
-            body{
-                display: grid;
-                align-content: center;
-                min-height: 100vh;
             }
             section{
                 display: grid;
@@ -54,53 +49,6 @@ const Chaos = () => (
                 line-height: 1.7;
                 color: #323232; 
             }
-            .links{
-                margin: 15px 0;
-            }
-            .links li{
-                border: 2px solid #323232;
-                list-style: none;
-                border-radius: 5px;
-                padding: 10px 15px;
-                width: 160px;
-                text-align: center;
-            }
-            .links li a{
-                text-transform: uppercase;
-                color: #323232;
-                text-decoration: none;
-            }
-            .links li:hover{
-                border-color: #bcbcbc;
-            }
-
-            .vertical-line{
-                height: 30px;
-                width: 3px;
-                background: #323232;
-                margin: 0 auto;
-            }
-            .icons{
-                display: flex;
-                padding: 15px 0;
-            }
-            .icons li{
-                display: block;
-                padding: 5px;
-                margin: 5px;
-            }
-            .icons li i{
-                font-size: 26px;
-                opacity: 0.8;
-            }
-            .icons li i:hover{
-                color: #bcbcbc;
-                cursor: pointer;
-            }
-
-
-            /*****************/
-
             @media(max-width: 900px){
                 section{
                 grid-template-columns: 1fr;

@@ -8,7 +8,7 @@ export default function TopNav() {
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
     return (
         <div className="container flex flex-shrink ken-customizations items-center justify-between py-2 px-2">
-            <div className="px-5    ">
+            <div className="px-5">
                 <Link href="/">
                     <a>
                         <LogoAcme/>
@@ -71,13 +71,12 @@ export default function TopNav() {
                     <div className="relative group hover:border-gray-600 border-b border-transparent border-0  ">
                         <button
                             className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">
-                            {/*className="flex flex-row items-center w-full py-4  text-sm text-gray-600 text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-sans">*/}
-                            <span>Second Dropdown</span>
+                            <span>Resiliency Reviews</span>
                         </button>
                         <div>
                             <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg group-hover:block">
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Home</a></li>
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Nowhere some</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="reviews">App Reviews</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="reviewprocess">Review Process</a></li>
                                 <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Away</a></li>
                             </ul>
                         </div>
@@ -86,7 +85,6 @@ export default function TopNav() {
                     <div className="relative group hover:border-gray-600 border-b border-transparent border-0 ">
                         <button
                             className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">
-                            {/*className="flex flex-row items-center w-full py-4  text-sm text-gray-600 text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-sans">*/}
                             <span>Third Dropdown</span>
                         </button>
                         <div>
@@ -101,7 +99,6 @@ export default function TopNav() {
                     <div className="relative group hover:border-gray-600 border-b border-transparent border-0 ">
                         <button
                             className="flex flex-row items-center h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">
-                            {/*className="flex flex-row items-center w-full py-4  text-sm text-gray-600 text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none font-sans">*/}
                             <span className="">Fourth Dropdown</span>
                         </button>
                         <div>
