@@ -101,6 +101,12 @@ button:focus {outline:0;}
 .passfail[alt="PASS"] {
     font-size: 10px;
     font-weight: 200;
+    color: green;
+}
+
+.passfail[alt="FAIL"] {
+    font-size: 10px;
+    font-weight: 200;
     color: red;
 }
 
@@ -114,6 +120,35 @@ button:focus {outline:0;}
     display: table-cell;
     width: 10%;
 }
+
+.hideMenuNav {
+    display: none;
+}
+.showMenuNav {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*#myColumns {*/
+/*    display: table;*/
+/*    width: 300px;*/
+/*}*/
+
+/*#myColumns > * {*/
+/*    display: table-cell;*/
+/*    width: 50%;*/
+/*}*/
+
 
 /* activate toggle */
 .accordion_item.active .button[alt^="9"] {
@@ -133,6 +168,14 @@ button:focus {outline:0;}
     overflow: hidden;
     transition: height ease 0.2s;
 }
+
+.answer_wrapper_mobile {
+    height: 0;
+    overflow: hidden;
+    transition: height ease 0.2s;
+}
+
+
 /*!* .answer_wrapper.open {*/
 /*  height: auto;*/
 /*} *!*/
