@@ -1,17 +1,32 @@
 export const faqs = [
     {
-        question: "Lorem ipsum dolor sit amet?",
-        answer:
-            "Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium. Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium.Tenetur ullam rerum ad iusto possimus sequi mollitia dolore sunt quam praesentium.",
+        question: "95%",
+        app: "App 1",
+        version: "1.2.0",
+        answer: "PASS",
+        updated: "2019-01-01",
+        incidents: 1,
+        fmea: "YES",
+        gremlin: "NO",
     },
     {
-        question: "Dignissimos sequi architecto?",
-        answer:
-            "Aperiam ab atque incidunt dolores ullam est, earum ipsa recusandae velit cumque. Aperiam ab atque incidunt dolores ullam est, earum ipsa recusandae velit cumque.",
+        question: "70%",
+        app: "App 2",
+        version: "1.0.0",
+        answer: "PASS",
+        updated: "2019-01-01",
+        incidents: 0,
+        fmea: "NO",
+        gremlin: "YES",
     },
     {
-        question: "Voluptas praesentium facere?",
-        answer:
-            "Blanditiis aliquid adipisci quisquam reiciendis voluptates itaque.",
+        question: "67%",
+        app: "App 3",
+        version: "0.0.9",
+        answer: "FAIL",
+        updated: "2019-01-01",
+        incidents: 1,
+        fmea: "NO",
+        gremlin: "NO",
     },
 ];

@@ -4,39 +4,26 @@
 /*    padding: 0;*/
 /*}*/
 
-/*body {*/
-/*    font-family: "Segoe UI", Arial, sans-serif;*/
-/*    line-height: 1.4;*/
-/*    background: #fff;*/
-/*    color: #444;*/
-/*}*/
-
 .container {
-    max-width: 600px;
+    max-width: 900px;
     margin: 1rem auto 1rem;
     padding: 0 10px;
 }
-
-/*.heading {*/
-/*    font-size: 23px;*/
-/*    margin-bottom: 20px;*/
-/*    text-transform: uppercase;*/
-/*}*/
 
 .accordion {
     list-style: none;
 }
 
 .accordion_item {
-    border-top: 1px solid #9f9f9f;
+    border-top: 10px solid white;
 }
 
-.button {
-    font-size: 16px;
-    background-color: #008593;
-    color: #fff;
+.button[alt^="9"] {
+    font-size: 13px;
+    background-color: #eefcf1;
+    color: #000000;
     text-align: left;
-    font-weight: 700;
+    font-weight: 300;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -44,22 +31,103 @@
     align-items: center;
     padding: 18px 8px;
     cursor: pointer;
-    border: none;
+    border-left: solid 3px darkgreen;
+}
+
+
+.button[alt^="7"] {
+    font-size: 13px;
+    background-color: #fcf6ee;
+    color: #000000;
+    text-align: left;
+    font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8px;
+    cursor: pointer;
+    border-left: solid 3px gold;
+}
+
+
+.button[alt^="6"] {
+    font-size: 13px;
+    background-color: #fcf0ee;
+    color: #000000;
+    text-align: left;
+    font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8px;
+    cursor: pointer;
+    border-left: solid 3px plum;
+}
+
+button:focus {outline:0;}
+
+.percentage {
+    font-size: 15px;
 }
 
 .control {
-    font-size: 20px;
+    font-size: 10px;
 }
 
-.answer {
-    background-color: #f7f7f7;
+.answer[alt^="9"] {
+    background-color: #f7fdf8;
+    border-left: solid 3px darkgreen;
+    padding: 20px;
+    /*justify-content: space-between;*/
+}
+
+.answer[alt^="7"] {
+    background-color: #fdfbf7;
+    border-left: solid 3px gold;
     padding: 20px;
 }
 
-/* activate toggle */
-.accordion_item.active .button {
-    background-color: #105057;
+.answer[alt^="6"] {
+    background-color: #fcf0ee;
+    border-left: solid 3px plum;
+    padding: 20px;
 }
+
+
+.passfail[alt="PASS"] {
+    font-size: 10px;
+    font-weight: 200;
+    color: red;
+}
+
+#myTable {
+    display: table;
+    /*width: 300px;*/
+    width: 900px;
+}
+
+#myTable > * {
+    display: table-cell;
+    width: 10%;
+}
+
+/* activate toggle */
+.accordion_item.active .button[alt^="9"] {
+    background-color: #eefcf1;
+}
+
+.accordion_item.active .button[alt^="7"] {
+    background-color: #fcf6ee;
+}
+
+.accordion_item.active .button[alt^="6"] {
+    background-color: #fdf8f7;
+}
+
 .answer_wrapper {
     height: 0;
     overflow: hidden;
