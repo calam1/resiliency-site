@@ -121,18 +121,6 @@ button:focus {outline:0;}
     width: 10%;
 }
 
-#secondTable {
-    display: table;
-    width: 250px;
-}
-
-#secondTable > * {
-    display: table-cell;
-    width: 10%;
-}
-
-
-
 /* activate toggle */
 .accordion_item.active .button[alt^="9"] {
     background-color: #eefcf1;

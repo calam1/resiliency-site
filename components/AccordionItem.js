@@ -13,6 +13,9 @@ const AccordionItem = ({faq, active, onToggle}) => {
 
 
             <div className="">
+                <li className="flex flex-row justify-between text-sm font-light">
+                   <span>Score</span><span className="">App name</span><span>External deps</span><span></span>
+                </li>
                 <li className={`accordion_item ${active ? "active" : ""}`}>
                     <button className="button" alt={question} onClick={onToggle}>
                         <span className="percentage font-bold">{question}</span>
@@ -34,7 +37,7 @@ const AccordionItem = ({faq, active, onToggle}) => {
                     >
 
                         <div className="answer hidden md:flex md:flex-col" alt={question}>
-                            <div id="myTable" className="">
+                            <div id="myTable">
                                 <div className="text-xs font-thin text-left">Overall Score</div>
                                 <div className="text-xs font-thin text-center">FMEA</div>
                                 <div className="text-xs font-thin text-center">Gremlin</div>
