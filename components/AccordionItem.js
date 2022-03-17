@@ -27,7 +27,7 @@ const AccordionItem = ({faq, active, onToggle}) => {
                         }
                     >
 
-                        <div className="answer hidden md:flex md:flex-col " alt={question}>
+                        <div className="answer hidden md:flex md:flex-col" alt={question}>
                             <div id="myTable" className="">
                                 <div className="text-xs font-thin text-left">Overall Score</div>
                                 <div className="text-xs font-thin text-center">FMEA</div>
@@ -47,7 +47,7 @@ const AccordionItem = ({faq, active, onToggle}) => {
                             </div>
                         </div>
 
-                        <div className="md:hidden lg:hidden sm:flex md:flex flex justify-between">
+                        <div className="answer md:hidden lg:hidden sm:flex md:flex flex justify-between" alt={question}>
                             <div>
                                 <div className="text-md font-thin text-left">Overall Score</div>
                                 <div className="text-md font-thin text-left">FMEA</div>
