@@ -77,7 +77,6 @@ export default function TopNav() {
                             <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg group-hover:block">
                                 <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="reviews">App Reviews</a></li>
                                 <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="reviewprocess">Review Process</a></li>
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Away</a></li>
                             </ul>
                         </div>
                     </div>
