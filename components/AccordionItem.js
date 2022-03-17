@@ -54,17 +54,18 @@ const AccordionItem = ({faq, active, onToggle}) => {
                                 <div className="text-center text-xl">{incidents}</div>
                             </div>
                         </div>
-                        <div className="answer hidden md:flex md:flex-col" alt={question}>
-                            <div id="" className="">
+                        {/*<div className="answer hidden md:flex md:flex-col" alt={question}>*/}
+                        <div className="answer hidden md:flex justify-between" alt={question}>
+                            <div>
                                 <span className="text-xs font-thin text-gray-500 mr-1.5">Updated</span>
                                 <span className="mr-4">{updated}</span>
                                 <span className="text-xs font-thin mr-1.5 text-gray-500">Incidents</span>
                                 <span className="">{incidents}</span>
                             </div>
-                            {/*<div id="" className="md:flex">*/}
-                            {/*    <div className="text-center">{updated}</div>*/}
-                            {/*    <div className="text-center">{incidents}</div>*/}
-                            {/*</div>*/}
+                            <div>
+                                <a className="border-2 p-1.5 text-white bg-black" href='#'>Read report</a>
+
+                            </div>
                         </div>
 
                         <div className="answer md:hidden lg:hidden sm:flex md:flex flex justify-between" alt={question}>
