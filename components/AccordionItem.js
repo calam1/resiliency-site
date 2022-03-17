@@ -63,7 +63,7 @@ const AccordionItem = ({faq, active, onToggle}) => {
                                 <span className="">{incidents}</span>
                             </div>
                             <div>
-                                <a className="border-2 p-1.5 text-white bg-black" href='#'>Read report</a>
+                                <a className="border-2 p-1.5 text-white bg-black border-transparent" href='#'>Read report</a>
 
                             </div>
                         </div>
