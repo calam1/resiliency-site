@@ -8,6 +8,7 @@ export const faqs = [
         incidents: 1,
         fmea: "YES",
         gremlin: "NO",
+        gamedays: "NO",
     },
     {
         question: "70%",
@@ -18,6 +19,7 @@ export const faqs = [
         incidents: 0,
         fmea: "NO",
         gremlin: "YES",
+        gamedays: "YES",
     },
     {
         question: "67%",
@@ -28,5 +30,6 @@ export const faqs = [
         incidents: 1,
         fmea: "NO",
         gremlin: "NO",
+        gamedays: "NO",
     },
 ];
