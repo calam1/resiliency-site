@@ -10,12 +10,8 @@ const AccordionItem = ({faq, active, onToggle}) => {
 
     return (
         <>
+            <div>
 
-
-            <div className="">
-                <li className="flex flex-row justify-between text-sm font-light">
-                   <span>Score</span><span className="">App name</span><span>External deps</span><span></span>
-                </li>
                 <li className={`accordion_item ${active ? "active" : ""}`}>
                     <button className="button" alt={question} onClick={onToggle}>
                         <span className="percentage font-bold">{question}</span>

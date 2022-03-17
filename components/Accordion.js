@@ -14,7 +14,11 @@ const Accordion = () => {
 
     return (
         <ul className="accordion">
+            <li className="flex flex-row justify-between text-xs font-light">
+                <span>Score</span><span className="">App name</span><span>External deps</span><span></span>
+            </li>
             {faqs.map((faq, index) => (
+
                 <AccordionItem
                     onToggle={() => handleToggle(index)}
                     active={clicked === index}
