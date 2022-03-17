@@ -27,17 +27,15 @@ const AccordionItem = ({faq, active, onToggle}) => {
                         }
                     >
 
-                        {/*<div className="answer" alt={question}>*/}
-                        {/*<div className="answer hidden container md:flex md:flex-row md:items-center md:justify-centers w-auto" alt={question}>*/}
-                        <div className="answer hidden md:flex" alt={question}>
-                            <div id="myTable" className="flex sm:hidden">
+                        <div className="answer hidden md:flex md:flex-col " alt={question}>
+                            <div id="myTable" className="">
                                 <div className="text-xs font-thin text-left">Overall Score</div>
                                 <div className="text-xs font-thin text-center">FMEA</div>
                                 <div className="text-xs font-thin text-center">Gremlin</div>
                                 <div className="text-xs font-thin text-center">Updated</div>
                                 <div className="text-xs font-thin text-center">Incidents</div>
                             </div>
-                            <div id="myTable" className="flex hidden">
+                            <div id="myTable" className="md:flex">
                                 <div className="block">
                                     <span className="mr-1.5">{question}</span>
                                     <span className="passfail" alt={answer}>{answer}</span>
@@ -52,10 +50,10 @@ const AccordionItem = ({faq, active, onToggle}) => {
                         <div className="md:hidden lg:hidden sm:flex md:flex flex justify-between">
                             <div>
                                 <div className="text-md font-thin text-left">Overall Score</div>
-                                <div className="text-md font-thin text-center">FMEA</div>
-                                <div className="text-md font-thin text-center">Gremlin</div>
-                                <div className="text-md font-thin text-center">Updated</div>
-                                <div className="text-md font-thin text-center">Incidents</div>
+                                <div className="text-md font-thin text-left">FMEA</div>
+                                <div className="text-md font-thin text-left">Gremlin</div>
+                                <div className="text-md font-thin text-left">Updated</div>
+                                <div className="text-md font-thin text-left">Incidents</div>
                             </div>
                             <div id="">
                                 <div className="block text-right">
