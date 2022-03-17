@@ -64,7 +64,7 @@ export default function TopNav() {
                     <div className="relative group">
                         <button
                             className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">
-                            <a href="/about">About Resiliency </a>
+                            <a href="/about">About</a>
                         </button>
                     </div>
 
