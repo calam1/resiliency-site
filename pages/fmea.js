@@ -9,27 +9,15 @@ const Fmea = () => (
         </section>
 
         <style>{`
-            {
-                box-sizing: border-box;
-                padding: 0;
-                margin: 0;
-            }
-            body{
-                display: grid;
-                align-content: center;
-                min-height: 100vh;
-            }
             section{
                 display: grid;
                 border-radius: 12px
             }
             .content{
-                // background-color: #12192c;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
-                // border-radius: 0  12px 12px 0;
                 color: #323232;
             }
             .content h2{
@@ -80,26 +68,6 @@ const Fmea = () => (
                 background: #323232;
                 margin: 0 auto;
             }
-            .icons{
-                display: flex;
-                padding: 15px 0;
-            }
-            .icons li{
-                display: block;
-                padding: 5px;
-                margin: 5px;
-            }
-            .icons li i{
-                font-size: 26px;
-                opacity: 0.8;
-            }
-            .icons li i:hover{
-                color: #bcbcbc;
-                cursor: pointer;
-            }
-
-
-            /*****************/
 
             @media(max-width: 900px){
                 section{

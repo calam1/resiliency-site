@@ -3,8 +3,8 @@ import Kafka from "./logo/Kafka";
 import Mongodb from "./logo/Mongodb";
 import Postgresql from "./logo/Postgresql";
 
-const AccordionItem = ({faq, active, onToggle}) => {
-    const {question, app, version, answer, updated, incidents, fmea, gremlin, gamedays} = faq;
+const AccordionItem = ({appScores, active, onToggle}) => {
+    const {score, app, version, passfail, updated, incidents, fmea, gremlin, gamedays} = appScores;
     const contentEl = useRef();
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
@@ -13,13 +13,12 @@ const AccordionItem = ({faq, active, onToggle}) => {
             <div>
 
                 <li className={`accordion_item ${active ? "active" : ""}`}>
-                    <button className="button" alt={question} onClick={onToggle}>
-                        <span className="percentage font-bold">{question}</span>
+                    <button className="button" alt={score} onClick={onToggle}>
+                        <span className="percentage font-bold">{score}</span>
                         <span>{app}</span>
-                        <div className="flex flex-row">
+                        <div className="flex flex-row justify-evenly">
                             <span><Kafka/></span><span><Mongodb/></span><span><Postgresql/></span>
                         </div>
-                        {/*<span>{version}</span>*/}
                         <span className="control">{active ? "Details —" : "Details +"} </span>
                     </button>
                     <div
@@ -32,29 +31,24 @@ const AccordionItem = ({faq, active, onToggle}) => {
                         }
                     >
 
-                        <div className="answer hidden md:flex md:flex-col" alt={question}>
+                        <div className="answer hidden md:flex md:flex-col" alt={score}>
                             <div id="myTable">
                                 <div className="text-xs font-thin text-left">Overall Score</div>
                                 <div className="text-xs font-thin text-center">FMEA</div>
                                 <div className="text-xs font-thin text-center">Gremlin</div>
                                 <div className="text-xs font-thin text-center">Gamedays</div>
-                                <div className="text-xs font-thin text-center">Updated</div>
-                                <div className="text-xs font-thin text-center">Incidents</div>
                             </div>
                             <div id="myTable" className="md:flex">
                                 <div className="block">
-                                    <span className="mr-1.5 text-xl">{question}</span>
-                                    <span className="passfail" alt={answer}>{answer}</span>
+                                    <span className="mr-1.5 text-xl">{score}</span>
+                                    <span className="passfail" alt={passfail}>{passfail}</span>
                                 </div>
                                 <div className="text-center text-xl">{fmea}</div>
                                 <div className="text-center text-xl">{gremlin}</div>
                                 <div className="text-center text-xl">{gamedays}</div>
-                                <div className="text-center text-xl">{updated}</div>
-                                <div className="text-center text-xl">{incidents}</div>
                             </div>
                         </div>
-                        {/*<div className="answer hidden md:flex md:flex-col" alt={question}>*/}
-                        <div className="answer hidden md:flex justify-between" alt={question}>
+                        <div className="answer hidden md:flex justify-between" alt={score}>
                             <div>
                                 <span className="text-xs font-thin text-gray-500 mr-1.5">Updated</span>
                                 <span className="mr-4">{updated}</span>
@@ -67,7 +61,7 @@ const AccordionItem = ({faq, active, onToggle}) => {
                             </div>
                         </div>
 
-                        <div className="answer md:hidden lg:hidden sm:flex md:flex flex justify-between" alt={question}>
+                        <div className="answer lg:hidden sm:flex md:flex flex justify-between" alt={score}>
                             <div>
                                 <div className="text-md font-thin text-left">Overall Score</div>
                                 <div className="text-md font-thin text-left">FMEA</div>
@@ -78,8 +72,8 @@ const AccordionItem = ({faq, active, onToggle}) => {
                             </div>
                             <div id="">
                                 <div className="block text-right">
-                                    <span className="mr-1.5">{question}</span>
-                                    <span className="passfail" alt={answer}>{answer}</span>
+                                    <span className="mr-1.5">{score}</span>
+                                    <span className="passfail" alt={passfail}>{passfail}</span>
                                 </div>
                                 <div className="text-right">{fmea}</div>
                                 <div className="text-right">{gremlin}</div>

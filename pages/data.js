@@ -1,9 +1,9 @@
-export const faqs = [
+export const appScores = [
     {
-        question: "95%",
+        score: "95%",
         app: "App 1",
         version: "1.2.0",
-        answer: "PASS",
+        passfail: "PASS",
         updated: "2019-01-01",
         incidents: 1,
         fmea: "YES",
@@ -11,10 +11,10 @@ export const faqs = [
         gamedays: "NO",
     },
     {
-        question: "70%",
+        score: "70%",
         app: "App 2",
         version: "1.0.0",
-        answer: "PASS",
+        passfail: "PASS",
         updated: "2019-01-01",
         incidents: 0,
         fmea: "NO",
@@ -22,10 +22,10 @@ export const faqs = [
         gamedays: "YES",
     },
     {
-        question: "67%",
+        score: "67%",
         app: "App 3",
         version: "0.0.9",
-        answer: "FAIL",
+        passfail: "FAIL",
         updated: "2019-01-01",
         incidents: 1,
         fmea: "NO",

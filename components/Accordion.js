@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { faqs } from "../pages/data";
+import { appScores } from "../pages/data";
 import AccordionItem from "./AccordionItem";
 
 const Accordion = () => {
@@ -14,16 +14,16 @@ const Accordion = () => {
 
     return (
         <ul className="accordion">
-            <li className="flex flex-row justify-between text-xs font-light">
-                <span>Score</span><span className="">App name</span><span>External deps</span><span></span>
+            <li className="flex flex-row justify-between text-xs font-light ">
+                <span className="ml-3">Score</span><span className="-mx-10">App name</span><span className="">External deps</span><span></span>
             </li>
-            {faqs.map((faq, index) => (
+            {appScores.map((appScores, index) => (
 
                 <AccordionItem
                     onToggle={() => handleToggle(index)}
                     active={clicked === index}
                     key={index}
-                    faq={faq}
+                    appScores={appScores}
                 />
             ))}
         </ul>

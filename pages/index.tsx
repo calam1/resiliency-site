@@ -57,7 +57,7 @@ export default function Index() {
   const blackWhite = isDark ? "rgba(255, 255, 255, 1)" : "rgba(0, 0, 0, 1)";
   return (
     <div className=" dark:bg-black mx-auto">
-      <div className="chris-customizations dark:bg-black flex flex-col w-full">
+      <div className="index-customizations dark:bg-black flex flex-col w-full">
         <div className="left-justify mt-20 my-3 dark:text-white text-6xl">
           Your guide to
           <Typewriter
@@ -67,24 +67,9 @@ export default function Index() {
           />
         </div>
 
-        <div className="flex flex-col chris-customizations left-justify my-6 text-lg font-light dark:text-white">
+        <div className="flex flex-col index-customizations left-justify my-6 text-lg font-light dark:text-white">
           <div>Read our detailed Resiliency Reviews for our cloud Apps.</div>
         </div>
-        {/*<div className="grid md:grid-cols-2 grid-cols-1 mx-5 max-w-xl">*/}
-        {/*  {cardsInfo.map((props) => (*/}
-        {/*    <Card {...props} />*/}
-        {/*  ))}*/}
-        {/*</div>*/}
-        {/* <div className="font-extralight self-center text-center mt-8">
-          Like the site? Build your own.
-        </div> */}
-        {/* <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/MatthewCaseres/markdownbooks.com"
-          className="mt-3 mb-12 self-center bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-          View on GitHub
-        </a> */}
       </div>
     </div>
   );

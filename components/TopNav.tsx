@@ -7,7 +7,7 @@ import LogoAcme from "./logo/LogoAcme";
 export default function TopNav() {
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
     return (
-        <div className="container flex flex-shrink ken-customizations items-center justify-between py-2 px-2">
+        <div className="container flex flex-shrink nav-customizations items-center justify-between py-2 px-2">
             <div className="px-5">
                 <Link href="/">
                     <a>
@@ -77,7 +77,7 @@ export default function TopNav() {
                         </button>
                         <div>
                             <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg">
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="reviews">App Reviews</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a className="mr-8" href="reviews">App Reviews</a></li>
                                 <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="reviewprocess">Review Process</a></li>
                             </ul>
                         </div>
@@ -86,27 +86,13 @@ export default function TopNav() {
                     <div className="relative group hover:border-gray-600 border-b border-transparent border-0 ">
                         <button
                             className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">
-                            <span>Third Dropdown</span>
+                            <span>Knowledge Hub</span>
                         </button>
                         <div>
                             <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg">
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Home</a></li>
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Nowhere some</a></li>
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Away</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="relative group hover:border-gray-600 border-b border-transparent border-0 ">
-                        <button
-                            className="flex flex-row items-center h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">
-                            <span className="">Fourth Dropdown</span>
-                        </button>
-                        <div>
-                            <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg">
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Home</a></li>
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Nowhere some</a></li>
-                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Away</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a className="mr-14" href="/fmea">FMEA</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="/resiliency">Patterns</a></li>
+                                <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="/chaos">Gremlin</a></li>
                             </ul>
                         </div>
                     </div>
@@ -137,12 +123,12 @@ export default function TopNav() {
         align-items: center;
       }
       @media (min-width: 767px) { 
-      .ken-customizations {
+      .nav-customizations {
         justify-content: center !important; 
         width: 100% !important;
         max-width: 100% !important;
       }
-      .chris-customizations {
+      .index-customizations {
         justify-content: center !important; 
         width: 800px !important;
         max-width: 1000px !important;

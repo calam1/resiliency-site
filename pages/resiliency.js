@@ -9,16 +9,6 @@ const Resiliency = () => (
         </section>
 
         <style>{`
-            {
-                box-sizing: border-box;
-                padding: 0;
-                margin: 0;
-            }
-            body{
-                display: grid;
-                align-content: center;
-                min-height: 100vh;
-            }
             section{
                 display: grid;
                 border-radius: 12px
@@ -80,27 +70,6 @@ const Resiliency = () => (
                 background: #323232;
                 margin: 0 auto;
             }
-            .icons{
-                display: flex;
-                padding: 15px 0;
-            }
-            .icons li{
-                display: block;
-                padding: 5px;
-                margin: 5px;
-            }
-            .icons li i{
-                font-size: 26px;
-                opacity: 0.8;
-            }
-            .icons li i:hover{
-                color: #bcbcbc;
-                cursor: pointer;
-            }
-
-
-            /*****************/
-
             @media(max-width: 900px){
                 section{
                 grid-template-columns: 1fr;

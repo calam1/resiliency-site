@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import "../styles/tailwind.css";
-import 'instantsearch.css/themes/satellite.css';
+import "../styles/App.css"
 import '../styles/typewriter.css'
-import "../pages/App.css"
+import 'instantsearch.css/themes/satellite.css';
 
 import TopNav from "../components/TopNav";
 import { DarkProvider } from "../components/DarkToggle";
