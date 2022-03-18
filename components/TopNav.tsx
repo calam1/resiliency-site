@@ -61,8 +61,13 @@ export default function TopNav() {
                 </section>
 
                 <div className="hidden container md:flex md:flex-row md:items-center md:justify-centers w-auto">
-                    <div className="relative group">
-                        <a href="/about" className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">About Resiliency</a>
+                    <div className="relative group flex flex-row border-transparent border-0 py-1">
+                    {/* <div className="relative group hover:border-gray-600 border-b border-transparent border-0  "> */}
+                        {/* <a href="/about" className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">About Resiliency</a> */}
+                        <a href="/about"><button
+                            className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">
+                            <span>About Resiliency</span>
+                        </button></a>
                     </div>
 
                     <div className="relative group hover:border-gray-600 border-b border-transparent border-0  ">
@@ -71,7 +76,7 @@ export default function TopNav() {
                             <span>Resiliency Reviews</span>
                         </button>
                         <div>
-                            <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg group-hover:block">
+                            <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg">
                                 <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="reviews">App Reviews</a></li>
                                 <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="reviewprocess">Review Process</a></li>
                             </ul>
@@ -84,7 +89,7 @@ export default function TopNav() {
                             <span>Third Dropdown</span>
                         </button>
                         <div>
-                            <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg group-hover:block">
+                            <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg">
                                 <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Home</a></li>
                                 <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Nowhere some</a></li>
                                 <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Away</a></li>
@@ -98,7 +103,7 @@ export default function TopNav() {
                             <span className="">Fourth Dropdown</span>
                         </button>
                         <div>
-                            <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg group-hover:block">
+                            <ul className="hidden absolute z-10 group-hover:block bg-grey-200 shadow-lg">
                                 <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Home</a></li>
                                 <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Nowhere some</a></li>
                                 <li className="hover:bg-gray-500 hover:text-white font-light text-sm px-4 pt-2 pb-2"><a href="#">Away</a></li>
