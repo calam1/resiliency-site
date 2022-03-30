@@ -11,7 +11,7 @@ export default function TopNav() {
             <div className="px-5">
                 <Link href="/">
                     <a>
-                        <LogoAcme/>
+                        <LogoAcme />
                     </a>
                 </Link>
             </div>
@@ -62,7 +62,7 @@ export default function TopNav() {
 
                 <div className="hidden container md:flex md:flex-row md:items-center md:justify-centers w-auto">
                     <div className="relative group flex flex-row border-transparent border-0 py-1">
-                    {/* <div className="relative group hover:border-gray-600 border-b border-transparent border-0  "> */}
+                        {/* <div className="relative group hover:border-gray-600 border-b border-transparent border-0  "> */}
                         {/* <a href="/about" className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">About Resiliency</a> */}
                         <a href="/about"><button
                             className="flex flex-row items-center w-full h-8 px-4 text-sm text-gray-600 text-left md:w-auto md:inline md:mt-0 focus:outline-none font-sans">

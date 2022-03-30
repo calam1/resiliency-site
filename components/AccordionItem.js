@@ -1,10 +1,10 @@
-import {useRef, useState} from "react";
+import { useRef, useState } from "react";
 import Kafka from "./logo/Kafka";
 import Mongodb from "./logo/Mongodb";
 import Postgresql from "./logo/Postgresql";
 
-const AccordionItem = ({appScores, active, onToggle}) => {
-    const {score, app, version, passfail, updated, incidents, fmea, gremlin, gamedays} = appScores;
+const AccordionItem = ({ appScores, active, onToggle }) => {
+    const { score, app, version, passfail, updated, incidents, fmea, gremlin, gamedays } = appScores;
     const contentEl = useRef();
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
@@ -17,7 +17,7 @@ const AccordionItem = ({appScores, active, onToggle}) => {
                         <span className="percentage font-bold">{score}</span>
                         <span>{app}</span>
                         <div className="flex flex-row justify-evenly">
-                            <span><Kafka/></span><span><Mongodb/></span><span><Postgresql/></span>
+                            <span><Kafka /></span><span><Mongodb /></span><span><Postgresql /></span>
                         </div>
                         <span className="control">{active ? "Details —" : "Details +"} </span>
                     </button>
@@ -26,8 +26,8 @@ const AccordionItem = ({appScores, active, onToggle}) => {
                         className="answer_wrapper"
                         style={
                             active
-                                ? {height: contentEl.current.scrollHeight}
-                                : {height: "0px"}
+                                ? { height: contentEl.current.scrollHeight }
+                                : { height: "0px" }
                         }
                     >
 
@@ -56,8 +56,7 @@ const AccordionItem = ({appScores, active, onToggle}) => {
                                 <span className="">{incidents}</span>
                             </div>
                             <div>
-                                <a className="border-2 p-1.5 text-white bg-black border-transparent" href='#'>Read report</a>
-
+                                <a className="border-2 p-1.5 text-white bg-black border-transparent" href='/detailreview'>Read report</a>
                             </div>
                         </div>
 
