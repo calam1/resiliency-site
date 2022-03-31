@@ -40,7 +40,9 @@ function Details() {
                                 <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Link 1</a>
                             </li>
                             <li className="relative">
-                                <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Link 2</a>
+                                {/* <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Link 2</a> */}
+                                <Link activeClass="active" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" to="test1a" spy={true} smooth={true} offset={isMobile ? - menuHeight : null} duration={100} >Test 1a</Link>
+
                             </li>
                             <li className="relative">
                                 <Link activeClass="active" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" to="test5a" spy={true} smooth={true} offset={isMobile ? - menuHeight : null} duration={100} >Test 5a</Link>
@@ -108,26 +110,295 @@ function Details() {
                     <Element name="test1" className="element" >
                         test 1
                         <Element name="test1a" className="element" >
-                            test1a
+                            <table key="test1a" id="test1a" className="container flex justify-center mx-auto flex-col border-b border-gray-200 w-full" >
+                                <thead className="bg-gray-50">
+                                    <tr>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            ID
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Name
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Email
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Created_at
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody className="bg-white">
+                                    <tr className="whitespace-nowrap">
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            1
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-900">
+                                                Jon doe
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-500">jhondoe@example.com</div>
+                                        </td>
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            2021-1-12
+                                        </td>
+                                    </tr>
+                                    <tr className="whitespace-nowrap">
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            1
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-900">
+                                                Jon doe
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-500">jhondoe@example.com</div>
+                                        </td>
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            2021-1-12
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </Element>
                     </Element>
 
                     <Element name="test2" className="element">
                         test 2
+                        <Element name="test2a" className="element" >
+                            <table key="test2a" id="test2a" className="container flex justify-center mx-auto flex-col border-b border-gray-200 w-full" >
+                                <thead className="bg-gray-50">
+                                    <tr>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            ID
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Name
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Email
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Created_at
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody className="bg-white">
+                                    <tr className="whitespace-nowrap">
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            1
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-900">
+                                                Jon doe
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-500">jhondoe@example.com</div>
+                                        </td>
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            2021-1-12
+                                        </td>
+                                    </tr>
+                                    <tr className="whitespace-nowrap">
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            1
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-900">
+                                                Jon doe
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-500">jhondoe@example.com</div>
+                                        </td>
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            2021-1-12
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </Element>
                     </Element>
 
                     <Element name="test3" className="element">
                         test 3
+                        <Element name="test3a" className="element" >
+                            <table key="test3a" id="test3a" className="container flex justify-center mx-auto flex-col border-b border-gray-200 w-full" >
+                                <thead className="bg-gray-50">
+                                    <tr>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            ID
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Name
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Email
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Created_at
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody className="bg-white">
+                                    <tr className="whitespace-nowrap">
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            1
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-900">
+                                                Jon doe
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-500">jhondoe@example.com</div>
+                                        </td>
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            2021-1-12
+                                        </td>
+                                    </tr>
+                                    <tr className="whitespace-nowrap">
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            1
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-900">
+                                                Jon doe
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-500">jhondoe@example.com</div>
+                                        </td>
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            2021-1-12
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </Element>
                     </Element>
 
                     <Element name="test4" className="element">
                         test 4
+                        <Element name="test4a" className="element" >
+                            <table key="test4a" id="test4a" className="container flex justify-center mx-auto flex-col border-b border-gray-200 w-full" >
+                                <thead className="bg-gray-50">
+                                    <tr>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            ID
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Name
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Email
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Created_at
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody className="bg-white">
+                                    <tr className="whitespace-nowrap">
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            1
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-900">
+                                                Jon doe
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-500">jhondoe@example.com</div>
+                                        </td>
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            2021-1-12
+                                        </td>
+                                    </tr>
+                                    <tr className="whitespace-nowrap">
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            1
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-900">
+                                                Jon doe
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-500">jhondoe@example.com</div>
+                                        </td>
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            2021-1-12
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </Element>
                     </Element>
 
                     <Element name="test5" className="element">
                         test 5
                         <Element name="test5a" className="element" >
-                            test5a
+                            <table key="test5a" id="test5a" className="container flex justify-center mx-auto flex-col border-b border-gray-200 w-full" >
+                                <thead className="bg-gray-50">
+                                    <tr>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            ID
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Name
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Email
+                                        </th>
+                                        <th className="px-6 py-2 text-xs text-gray-500">
+                                            Created_at
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody className="bg-white">
+                                    <tr className="whitespace-nowrap">
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            1
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-900">
+                                                Jon doe
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-500">jhondoe@example.com</div>
+                                        </td>
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            2021-1-12
+                                        </td>
+                                    </tr>
+                                    <tr className="whitespace-nowrap">
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            1
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-900">
+                                                Jon doe
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="text-sm text-gray-500">jhondoe@example.com</div>
+                                        </td>
+                                        <td className="px-6 py-4 text-sm text-gray-500">
+                                            2021-1-12
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </Element>
                     </Element>
 
