@@ -32,12 +32,17 @@ function Details() {
                                 <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
                             </svg>
                         </a>
+                        {/* <div className="cursor-pointer m-2"><Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} offset={isMobile ? - menuHeight : null} */}
+                        {/* //                 duration={500} >Test 1</Link></div> */}
                         <ul className="relative accordion-collapse collapse" id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
                             <li className="relative">
                                 <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Link 1</a>
                             </li>
                             <li className="relative">
                                 <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Link 2</a>
+                            </li>
+                            <li className="relative">
+                                <Link activeClass="active" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" to="test1" spy={true} smooth={true} offset={isMobile ? - menuHeight : null} duration={100} >Test 1</Link>
                             </li>
                         </ul>
                     </li>
@@ -83,65 +88,99 @@ function Details() {
             </div>
 
 
+
+            <div id={container} className="container justify-center mx-auto md:flex-row flex flex-col overflow-auto border border-box" style={{ flexBasis: "65%", flex: 2 }} >
+
+                <div style={{ flex: 1 }}>
+
+                    <Element name="test1" className="element" >
+                        test 1
+                    </Element>
+
+                    <Element name="test2" className="element">
+                        test 2
+                    </Element>
+
+                    <Element name="test3" className="element">
+                        test 3
+                    </Element>
+
+                    <Element name="test4" className="element">
+                        test 4
+                    </Element>
+
+                    <Element name="test5" className="element">
+                        test 5
+                    </Element>
+
+                    <div id="anchor" className="element">
+                        test 6 (anchor)
+                    </div>
+
+
+
+                </div>
+            </div>
+
         </>
 
-            //
-            // <div className="container-fluid right-0 bottom-0 left-0 top-0 justify-center mx-auto overflow-auto" >
-            //
-            //     <div id={container} className="container justify-center mx-auto md:flex-row flex flex-col overflow-auto border border-box" style={{ flexBasis: "65%", flex: 2 }} >
-            //
-            //         <div ref={menuRef} className="md:w-64  border-r-2 sticky top-0 flex-shrink-0 ">
-            //             <div className="cursor-pointer m-2"><Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} offset={isMobile ? - menuHeight : null}
-            //                 duration={500} >Test 1</Link></div>
-            //             <div className="cursor-pointer m-2"><Link activeClass="active" className="test2" to="test2" spy={true} smooth={true} offset={isMobile ? - menuHeight : null}
-            //                 duration={500}>Test 2</Link></div>
-            //             <div className="cursor-pointer m-2"><Link activeClass="active" className="test3" to="test3" spy={true} smooth={true} offset={isMobile ? - menuHeight : null}
-            //                 duration={500} >Test 3</Link></div>
-            //             <div className="cursor-pointer m-2"><Link activeClass="active" className="test4" to="test4" spy={true} smooth={true} offset={isMobile ? - menuHeight : null}
-            //                 duration={500}>Test 4</Link></div>
-            //             <div className="cursor-pointer m-2"><Link activeClass="active" className="test5" to="test5" spy={true} smooth={true} offset={isMobile ? - menuHeight : null}
-            //                 duration={500} delay={1000}>Test 5 ( delay )</Link></div>
-            //         </div>
-            //
-            //
-            //         <div style={{ flex: 1 }}>
-            //
-            //             <Element name="test1" className="element" >
-            //                 test 1
-            //             </Element>
-            //
-            //             <Element name="test2" className="element">
-            //                 test 2
-            //             </Element>
-            //
-            //             <Element name="test3" className="element">
-            //                 test 3
-            //             </Element>
-            //
-            //             <Element name="test4" className="element">
-            //                 test 4
-            //             </Element>
-            //
-            //             <Element name="test5" className="element">
-            //                 test 5
-            //             </Element>
-            //
-            //             <div id="anchor" className="element">
-            //                 test 6 (anchor)
-            //             </div>
-            //
-            //
-            //
-            //         </div>
-            //     </div>
-            // </div>
-            //
+        //
+        // <div className="container-fluid right-0 bottom-0 left-0 top-0 justify-center mx-auto overflow-auto" >
+        //
+        //     <div id={container} className="container justify-center mx-auto md:flex-row flex flex-col overflow-auto border border-box" style={{ flexBasis: "65%", flex: 2 }} >
+        //
+        //         <div ref={menuRef} className="md:w-64  border-r-2 sticky top-0 flex-shrink-0 ">
+        //             <div className="cursor-pointer m-2"><Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} offset={isMobile ? - menuHeight : null}
+        //                 duration={500} >Test 1</Link></div>
+        //             <div className="cursor-pointer m-2"><Link activeClass="active" className="test2" to="test2" spy={true} smooth={true} offset={isMobile ? - menuHeight : null}
+        //                 duration={500}>Test 2</Link></div>
+        //             <div className="cursor-pointer m-2"><Link activeClass="active" className="test3" to="test3" spy={true} smooth={true} offset={isMobile ? - menuHeight : null}
+        //                 duration={500} >Test 3</Link></div>
+        //             <div className="cursor-pointer m-2"><Link activeClass="active" className="test4" to="test4" spy={true} smooth={true} offset={isMobile ? - menuHeight : null}
+        //                 duration={500}>Test 4</Link></div>
+        //             <div className="cursor-pointer m-2"><Link activeClass="active" className="test5" to="test5" spy={true} smooth={true} offset={isMobile ? - menuHeight : null}
+        //                 duration={500} delay={1000}>Test 5 ( delay )</Link></div>
+        //         </div>
+        //
+        //
+        //         <div style={{ flex: 1 }}>
+        //
+        //             <Element name="test1" className="element" >
+        //                 test 1
+        //             </Element>
+        //
+        //             <Element name="test2" className="element">
+        //                 test 2
+        //             </Element>
+        //
+        //             <Element name="test3" className="element">
+        //                 test 3
+        //             </Element>
+        //
+        //             <Element name="test4" className="element">
+        //                 test 4
+        //             </Element>
+        //
+        //             <Element name="test5" className="element">
+        //                 test 5
+        //             </Element>
+        //
+        //             <div id="anchor" className="element">
+        //                 test 6 (anchor)
+        //             </div>
+        //
+        //
+        //
+        //         </div>
+        //     </div>
+        // </div>
+        //
 
 
 
 
 
-);
+    );
 
 }
 
