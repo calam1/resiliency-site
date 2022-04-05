@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { appScores } from "../pages/data";
-import Details from "./Details";
+import Details from "../pages/details";
 
 const DetailReview = () => {
 
