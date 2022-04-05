@@ -62,7 +62,25 @@
     border-left: solid 3px plum;
 }
 
-button:focus {outline:0;}
+.button[alt^="2"] {
+    font-size: 13px;
+    background-color: lightgray;
+    text-align: left;
+    font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8px;
+    cursor: pointer;
+    border-left: solid 3px darkgray;
+}
+
+
+button:focus {
+    outline: 0;
+}
 
 .percentage {
     font-size: 15px;
@@ -91,6 +109,13 @@ button:focus {outline:0;}
     padding: 20px;
 }
 
+.answer[alt^="2"] {
+    background-color: #ffffff;
+    border-left: solid 3px darkgray;
+    padding: 20px;
+    list-style-type: circle;
+}
+
 
 .passfail[alt="PASS"] {
     font-size: 10px;
@@ -104,6 +129,10 @@ button:focus {outline:0;}
     color: red;
 }
 
+#subInfo ul li {
+    list-style-type: disc;
+}
+
 #myTable {
     display: table;
     /*width: 300px;*/
@@ -111,7 +140,7 @@ button:focus {outline:0;}
     width: 1200px;
 }
 
-#myTable > * {
+#myTable>* {
     display: table-cell;
     width: 15%;
 }

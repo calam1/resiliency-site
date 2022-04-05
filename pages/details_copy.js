@@ -9,8 +9,9 @@ function Details() {
     const menuRef = useRef(null);
     const [menuHeight, setMenuHeight] = useState(0);
 
-    const isMobile = useMediaQuery({
-    });
+    // const isMobile = useMediaQuery({
+    // query: "(max-width: 767px)"
+
 
     useEffect(() => {
         setMenuHeight(menuRef.current.clientHeight);
