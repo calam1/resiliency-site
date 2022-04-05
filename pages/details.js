@@ -52,9 +52,9 @@ function Details() {
                                         <Link activeClass="active" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" to="test1a" spy={true} smooth={true} offset={isMobile ? - menuHeight : null} duration={100} to="summary" >Summary</Link>
 
                                     </li>
-                                    <li className="relative">
+                                    {/* <li className="relative">
                                         <Link activeClass="active" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" to="test5a" spy={true} smooth={true} offset={isMobile ? - menuHeight : null} duration={100} >Test 5a</Link>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </li>
                             <li className="relative" id="sidenavEx2">
