@@ -13,7 +13,7 @@ const SummaryAccordionItem = ({ appScores, active, onToggle }) => {
             <div>
 
                 <li className={`${active ? "active" : ""}`}>
-                    <button className="button" alt={score} onClick={onToggle} control>
+                    <button className="button" alt={score} onClick={onToggle} >
                         <span className="ml-16 font-bold">Summary</span>
                         <div className="flex flex-row justify-evenly">
                         </div>
@@ -30,7 +30,7 @@ const SummaryAccordionItem = ({ appScores, active, onToggle }) => {
                         }
                     >
 
-                        <div id="subInfo" className="text-sm answer hidden md:flex md:flex-col" alt={score}>
+                        <div id="subInfo" className="text-sm answer md:flex md:flex-col" alt={score}>
                             Very simply, the audit looks for the following declarations from the developer's site. With these declarations, it is reasonable to trust the smart contracts.
                             <ul className="px-3">
                                 <li>Here is my smart contract on the blockchain</li>
